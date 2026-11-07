@@ -6,133 +6,197 @@
   <title>Aether Works | Adaptive Physical AI for Legacy Factories</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body { background-color: #0f172a; color: #e2e8f0; }
+    body { font-family: 'Inter', sans-serif; background-color: #0a0f1e; color: #e2e8f0; }
     .accent { color: #22d3ee; }
-    .btn-primary { background-color: #06b6d4; color: #0f172a; }
-    .btn-primary:hover { background-color: #22d3ee; }
+    .btn-primary { background: linear-gradient(135deg, #06b6d4, #22d3ee); color: #0a0f1e; transition: all 0.3s; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(6, 182, 212, 0.4); }
+    .card { background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(51, 65, 85, 0.5); transition: all 0.3s; }
+    .card:hover { border-color: #22d3ee; transform: translateY(-5px); }
+    .gradient-text { background: linear-gradient(135deg, #22d3ee, #67e8f9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   </style>
 </head>
-<body class="font-sans antialiased">
+<body class="antialiased">
   <!-- Nav -->
-  <nav class="fixed w-full bg-slate-900/90 backdrop-blur z-50 border-b border-slate-800">
+  <nav class="fixed w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-800/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
-        <div class="text-2xl font-bold">Aether <span class="accent">Works</span></div>
-        <a href="#contact" class="btn-primary px-4 py-2 rounded-lg font-semibold">Book Feasibility Scan</a>
+        <div class="text-2xl font-bold tracking-tight">Aether <span class="accent">Works</span></div>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="#use-cases" class="hover:text-cyan-400 transition">Use Cases</a>
+          <a href="#features" class="hover:text-cyan-400 transition">Platform</a>
+          <a href="#how" class="hover:text-cyan-400 transition">How It Works</a>
+          <a href="#contact" class="btn-primary px-5 py-2 rounded-full font-semibold text-sm">Book Scan</a>
+        </div>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="pt-32 pb-20 px-4 text-center">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-5xl md:text-6xl font-bold mb-6">Adaptive Physical AI for Legacy Factories</h1>
-      <p class="text-xl md:text-2xl text-slate-300 mb-8">Teach your production cell in an afternoon. It learns and improves every shift. From feasibility to managed RaaS. NZ first, then Australia.</p>
-      <a href="#contact" class="btn-primary inline-block px-8 py-4 rounded-lg text-lg font-semibold">Start a Free Feasibility Scan</a>
+  <section class="relative pt-32 pb-24 px-4 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-cyan-500/5 to-transparent"></div>
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      <div class="inline-block px-4 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-sm font-medium mb-6">NZ First · Physical AI for Factories</div>
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Adaptive Automation<br><span class="gradient-text">That Learns</span></h1>
+      <p class="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">Teach your production cell in an afternoon. It learns from your operators and improves every shift. From feasibility to managed RaaS for legacy factories.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold">Start Feasibility Scan</a>
+        <a href="#how" class="px-8 py-4 rounded-full border border-slate-600 hover:border-cyan-400 transition font-medium">See How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-12 border-y border-slate-800/50">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div><div class="text-4xl font-bold accent">15-30%</div><div class="text-sm text-slate-400 mt-1">Typical OEE Lift</div></div>
+      <div><div class="text-4xl font-bold accent">Hours</div><div class="text-sm text-slate-400 mt-1">To Teach a Task</div></div>
+      <div><div class="text-4xl font-bold accent">RaaS</div><div class="text-sm text-slate-400 mt-1">After Proven Pilot</div></div>
+      <div><div class="text-4xl font-bold accent">NZ→Aus</div><div class="text-sm text-slate-400 mt-1">Local Support</div></div>
     </div>
   </section>
 
   <!-- Problem -->
-  <section class="py-20 bg-slate-800/50">
-    <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12">Labour shortages. Rigid automation. High changeover costs.</h2>
+  <section class="py-24 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">The Challenge for ANZ Factories</h2>
+      <p class="text-center text-slate-400 mb-16 max-w-2xl mx-auto">Labour shortages and high wages meet rigid automation that can't handle real workshop variety.</p>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-slate-800 p-6 rounded-xl">
-          <i class="fas fa-users text-4xl accent mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Persistent Labour Gaps</h3>
-          <p>High wages and skills shortages in NZ/Aus manufacturing make unattended production critical.</p>
+        <div class="card p-8 rounded-2xl text-center">
+          <i class="fas fa-users text-4xl accent mb-6"></i>
+          <h3 class="text-xl font-semibold mb-3">Persistent Labour Gaps</h3>
+          <p class="text-slate-300">Skills shortages and high minimum wages make unattended production essential for competitiveness.</p>
         </div>
-        <div class="bg-slate-800 p-6 rounded-xl">
-          <i class="fas fa-cogs text-4xl accent mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Rigid Systems Fail SMEs</h3>
-          <p>Traditional automation can't handle part variants or frequent changeovers common in workshops.</p>
+        <div class="card p-8 rounded-2xl text-center">
+          <i class="fas fa-cogs text-4xl accent mb-6"></i>
+          <h3 class="text-xl font-semibold mb-3">Rigid Systems Fail</h3>
+          <p class="text-slate-300">Traditional robots break on part variants and frequent changeovers common in SME workshops.</p>
         </div>
-        <div class="bg-slate-800 p-6 rounded-xl">
-          <i class="fas fa-dollar-sign text-4xl accent mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">High CapEx Barriers</h3>
-          <p>Full robot ownership is expensive. RaaS and pilots remove the risk.</p>
+        <div class="card p-8 rounded-2xl text-center">
+          <i class="fas fa-dollar-sign text-4xl accent mb-6"></i>
+          <h3 class="text-xl font-semibold mb-3">CapEx Barriers</h3>
+          <p class="text-slate-300">High upfront costs and integration complexity keep adaptive automation out of reach.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Solution & Use Cases -->
-  <section class="py-20">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-4">Adaptive Cells That Learn</h2>
-      <p class="text-center text-xl text-slate-300 mb-12">Physical AI cells for real factory outcomes. Continuous improvement from operations.</p>
+  <!-- Use Cases -->
+  <section id="use-cases" class="py-24 px-4 bg-slate-900/50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">Use Cases That Deliver</h2>
+      <p class="text-center text-slate-400 mb-16">Real outcomes for real factories.</p>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="border border-slate-700 rounded-xl p-6 hover:border-cyan-500 transition">
-          <h3 class="text-2xl font-semibold mb-3 accent">CNC Machine Tending</h3>
-          <p>Load/unload with vision adaptation. Enable unattended nights. Typical OEE lift 15-30%.</p>
+        <div class="card p-8 rounded-2xl">
+          <div class="text-cyan-400 text-3xl mb-4"><i class="fas fa-industry"></i></div>
+          <h3 class="text-2xl font-bold mb-4">CNC Machine Tending</h3>
+          <p class="text-slate-300 mb-4">AI arm loads/unloads, adapts to variants via vision and learning. Enables unattended nights and higher spindle utilization.</p>
+          <div class="text-sm accent font-medium">15-30% OEE lift · Lights-out shifts</div>
         </div>
-        <div class="border border-slate-700 rounded-xl p-6 hover:border-cyan-500 transition">
-          <h3 class="text-2xl font-semibold mb-3 accent">Flexible Palletising</h3>
-          <p>Handle variable SKUs and boxes. Learn from short demos. No weeks of reprogramming.</p>
+        <div class="card p-8 rounded-2xl">
+          <div class="text-cyan-400 text-3xl mb-4"><i class="fas fa-boxes"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Flexible Palletising</h3>
+          <p class="text-slate-300 mb-4">Handles variable SKUs and changeovers without weeks of reprogramming. Learns from short human demos.</p>
+          <div class="text-sm accent font-medium">Faster changeovers · Consistent quality</div>
         </div>
-        <div class="border border-slate-700 rounded-xl p-6 hover:border-cyan-500 transition">
-          <h3 class="text-2xl font-semibold mb-3 accent">Quality + Handling</h3>
-          <p>Vision inspection combined with adaptive pick-and-place. Improves from defect data.</p>
+        <div class="card p-8 rounded-2xl">
+          <div class="text-cyan-400 text-3xl mb-4"><i class="fas fa-search"></i></div>
+          <h3 class="text-2xl font-bold mb-4">Quality + Handling</h3>
+          <p class="text-slate-300 mb-4">Vision inspection combined with adaptive gentle handling. Improves continuously from production and defect data.</p>
+          <div class="text-sm accent font-medium">Continuous model improvement</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Features -->
-  <section class="py-20 bg-slate-800/50">
-    <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12">Platform Features That Sell</h2>
+  <section id="features" class="py-24 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Platform Features That Sell</h2>
       <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <h3 class="text-xl font-semibold mb-2"><i class="fas fa-clock accent mr-2"></i> Teach in Hours</h3>
-          <p>Record short human demos or teleop. Fine-tune policies for rapid deployment.</p>
+        <div class="flex items-start space-x-6 p-6">
+          <div class="text-cyan-400 text-3xl mt-1"><i class="fas fa-video"></i></div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Teach in an Afternoon</h3>
+            <p class="text-slate-300">Record short demos or teleoperate. Policy deploys rapidly and refines from real operations.</p>
+          </div>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-2"><i class="fas fa-brain accent mr-2"></i> Continuous Learning</h3>
-          <p>Operational data improves success rates and recovery skills over time.</p>
+        <div class="flex items-start space-x-6 p-6">
+          <div class="text-cyan-400 text-3xl mt-1"><i class="fas fa-brain"></i></div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Continuous Learning</h3>
+            <p class="text-slate-300">Every shift makes the cell smarter. Fleet data improves recovery and success rates.</p>
+          </div>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-2"><i class="fas fa-chart-line accent mr-2"></i> Live OEE & ISA-95</h3>
-          <p>Full-cell performance tracking. Automatic reports for your existing systems.</p>
+        <div class="flex items-start space-x-6 p-6">
+          <div class="text-cyan-400 text-3xl mt-1"><i class="fas fa-chart-line"></i></div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Live OEE & ISA-95</h3>
+            <p class="text-slate-300">Full-cell performance tracking. Automatic reports that feed your existing ERP/MES systems.</p>
+          </div>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-2"><i class="fas fa-shield-alt accent mr-2"></i> Safety-First RaaS</h3>
-          <p>Hybrid pricing, remote monitoring, outcome SLAs. Certified hardware first.</p>
+        <div class="flex items-start space-x-6 p-6">
+          <div class="text-cyan-400 text-3xl mt-1"><i class="fas fa-handshake"></i></div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Outcome-Focused RaaS</h3>
+            <p class="text-slate-300">Hybrid pricing with performance SLAs. Remote monitoring, updates, and results accountability.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How it Works -->
-  <section class="py-20">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-12">How It Works</h2>
-      <div class="grid md:grid-cols-4 gap-6">
-        <div><div class="text-5xl accent font-bold mb-2">1</div><p>Discover<br>Feasibility scan</p></div>
-        <div><div class="text-5xl accent font-bold mb-2">2</div><p>Pilot<br>Adaptive cell</p></div>
-        <div><div class="text-5xl accent font-bold mb-2">3</div><p>Learn<br>Continuous improvement</p></div>
-        <div><div class="text-5xl accent font-bold mb-2">4</div><p>Managed<br>RaaS outcomes</p></div>
+  <!-- How It Works -->
+  <section id="how" class="py-24 px-4 bg-slate-900/50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-16">How It Works</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="w-16 h-16 mx-auto rounded-full bg-cyan-500/20 flex items-center justify-center text-2xl font-bold accent mb-4">1</div>
+          <h3 class="font-bold text-lg mb-2">Feasibility</h3>
+          <p class="text-slate-400 text-sm">Paid scan of your process, cycle time, safety, and payback.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 mx-auto rounded-full bg-cyan-500/20 flex items-center justify-center text-2xl font-bold accent mb-4">2</div>
+          <h3 class="font-bold text-lg mb-2">Pilot Cell</h3>
+          <p class="text-slate-400 text-sm">Deploy adaptive cell. Track real outcomes on your floor.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 mx-auto rounded-full bg-cyan-500/20 flex items-center justify-center text-2xl font-bold accent mb-4">3</div>
+          <h3 class="font-bold text-lg mb-2">Learn</h3>
+          <p class="text-slate-400 text-sm">Continuous improvement from production data and demos.</p>
+        </div>
+        <div>
+          <div class="w-16 h-16 mx-auto rounded-full bg-cyan-500/20 flex items-center justify-center text-2xl font-bold accent mb-4">4</div>
+          <h3 class="font-bold text-lg mb-2">Managed RaaS</h3>
+          <p class="text-slate-400 text-sm">We run ops, maintenance, and model updates. You get the parts.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-20 bg-slate-800/50">
-    <div class="max-w-xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-6">Book a Feasibility Scan</h2>
-      <p class="mb-8 text-slate-300">Tell us about your workshop. We'll assess adaptive automation potential.</p>
-      <form class="space-y-4">
-        <input type="text" placeholder="Name" class="w-full p-3 rounded bg-slate-700 border border-slate-600">
-        <input type="email" placeholder="Email" class="w-full p-3 rounded bg-slate-700 border border-slate-600">
-        <textarea placeholder="Describe your process (e.g. CNC tending)" class="w-full p-3 rounded bg-slate-700 border border-slate-600 h-24"></textarea>
-        <button type="submit" class="btn-primary w-full py-3 rounded-lg font-semibold">Request Scan</button>
+  <section id="contact" class="py-24 px-4">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Assess Your Cell?</h2>
+      <p class="text-xl text-slate-300 mb-10">Start with a paid feasibility scan. We'll show you the adaptive automation potential for your workshop.</p>
+      <form class="space-y-5 text-left">
+        <input type="text" placeholder="Your Name" class="w-full p-4 rounded-xl bg-slate-800/50 border border-slate-700 focus:border-cyan-400 focus:outline-none transition">
+        <input type="email" placeholder="Email Address" class="w-full p-4 rounded-xl bg-slate-800/50 border border-slate-700 focus:border-cyan-400 focus:outline-none transition">
+        <input type="text" placeholder="Company / Workshop" class="w-full p-4 rounded-xl bg-slate-800/50 border border-slate-700 focus:border-cyan-400 focus:outline-none transition">
+        <textarea placeholder="Describe your process (e.g. CNC machine tending, palletising)" class="w-full p-4 rounded-xl bg-slate-800/50 border border-slate-700 focus:border-cyan-400 focus:outline-none transition h-32"></textarea>
+        <button type="submit" class="btn-primary w-full py-4 rounded-xl text-lg font-semibold">Request Feasibility Scan</button>
       </form>
+      <p class="mt-6 text-sm text-slate-500">Or email hello@aetherworks.nz</p>
     </div>
   </section>
 
-  <footer class="py-8 text-center text-slate-500 border-t border-slate-800">
-    <p>&copy; 2026 Aether Works. Adaptive Physical AI. NZ first, then Australia.</p>
+  <!-- Footer -->
+  <footer class="py-12 border-t border-slate-800/50 text-center text-slate-500">
+    <div class="text-xl font-bold mb-2">Aether <span class="accent">Works</span></div>
+    <p>Adaptive Physical AI for Legacy Factories · New Zealand → Australia</p>
+    <p class="text-sm mt-4">&copy; 2026 Aether Works. Continuous learning. Measurable outcomes.</p>
   </footer>
 </body>
 </html>
